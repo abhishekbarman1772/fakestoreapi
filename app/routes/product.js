@@ -22,6 +22,7 @@ const productInst = new ProductController();
  *           description: Server internal error
  */
 router.post('/', productInst.create);
+
 /**
  * @swagger
  *  /product:
@@ -36,6 +37,7 @@ router.post('/', productInst.create);
  *           description: Server internal error
  */
 router.get('/', productInst.getAll);
+
 /**
  * @swagger
  *  /product/categories:
@@ -50,6 +52,7 @@ router.get('/', productInst.getAll);
  *           description: Server internal error
  */
 router.get('/categories', productInst.getCategories);
+
 /**
  * @swagger
  *  /product/category/{categoryName}:
@@ -70,6 +73,7 @@ router.get('/categories', productInst.getCategories);
  *           description: Server internal error
  */
 router.get('/category/:categoryName', productInst.getProductsByCategory);
+
 /**
  * @swagger
  *  /product/{productId}:
@@ -90,6 +94,7 @@ router.get('/category/:categoryName', productInst.getProductsByCategory);
  *           description: Server internal error
  */
 router.get('/:productId', productInst.get);
+
 /**
  * @swagger
  *  /product/{productId}:
@@ -112,6 +117,7 @@ router.get('/:productId', productInst.get);
  *           description: Server internal error
  */
 router.patch('/:productId', productInst.update);
+
 /**
  * @swagger
  *  /product/{productId}:
