@@ -1,0 +1,76 @@
+{
+	"schemas": {
+        "CreateProduct": {
+			"type": "object",
+			"properties": {
+                "title":{
+					"type": "string",
+					"example": "Pierced Owl Rose Gold Plated Stainless Steel Double"
+				},
+                "price":{
+                    "type": "number",
+                    "example": 10.99
+                },
+                "category":{
+                    "type": "string",
+					"example": "jewelery"
+                },
+                "description":{
+                    "type": "string",
+					"example": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel"
+                },
+                "image":{
+                    "type": "string",
+                    "example": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg"
+                }
+			}
+		},
+        "UpdateProduct": {
+			"type": "object",
+			"properties": {
+                "title":{
+					"type": "string",
+					"example": "Pierced Owl Rose Gold Plated Stainless Steel Double"
+				},
+                "price":{
+                    "type": "number",
+                    "example": 10.99
+                },
+                "category":{
+                    "type": "string",
+					"example": "jewelery"
+                },
+                "description":{
+                    "type": "string",
+					"example": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel"
+                },
+                "image":{
+                    "type": "string",
+                    "example": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg"
+                }
+			}
+		}
+    },
+    "requestBodies": {
+        "CreateProductRequest": {
+            "required": true,
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "#/components/schemas/CreateProduct"
+                    }
+                }
+            }
+        },
+        "UpdateProductRequest": {
+            "required": true,
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "#/components/schemas/UpdateProduct"
+                    }
+                }
+            }
+        }
+    }
+}
