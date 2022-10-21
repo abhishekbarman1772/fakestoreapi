@@ -6,7 +6,7 @@ const swaggerUrl = '/swagger';
 
 module.exports = (app) => {
   const swaggerDefinition = {};
-  const url = 'http://localhost:7000/api/V1';
+  const url = 'https://fakerestapi11.herokuapp.com/api/V1';
 
   swaggerDefinition.openapi = '3.0.0';
   swaggerDefinition.info = {
